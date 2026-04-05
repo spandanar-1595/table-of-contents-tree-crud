@@ -1,0 +1,220 @@
+📄 PROJECT REPORT
+
+
+1. Abstract
+
+
+This project presents the implementation of a Table of Contents (TOC) system for an E-Book
+Reader using a Tree Data Structure in the C programming language. The system allows
+users to perform CRUD operations—Create, Read, Update, and Delete—on hierarchical
+content such as chapters, sections, and subsections. The project demonstrates the use of
+dynamic memory allocation, modular programming, and efficient traversal techniques to
+manage structured data.
+
+
+2. Introduction
+
+
+With the increasing use of digital books, organizing content efficiently has become essential.
+An E-Book Reader requires a structured representation of chapters and sections to provide
+easy navigation.
+A Tree Data Structure is ideal for representing hierarchical relationships. This project
+simulates a real-world E-Book Table of Contents using a tree where each node represents a
+chapter or section.
+
+
+3. Objectives
+
+
+● To implement a Tree Data Structure in C
+
+
+● To perform CRUD operations on hierarchical data
+
+
+● To develop a menu-driven application
+
+
+● To demonstrate dynamic memory allocation using malloc and free
+
+
+● To simulate a real-world E-Book Reader structure
+
+
+4. Scope of the Project
+
+
+● Manage chapters, sections, and subsections
+
+
+● Perform operations like add, delete, update, search, and display
+
+
+● Provide a simple command-line interface
+
+
+● Demonstrate academic understanding of Trees
+
+
+Limitations:
+
+
+● No graphical interface
+
+
+● No file storage (temporary memory only)
+
+
+5. Literature Review
+
+
+Tree Data Structures are widely used in:
+
+● File systems (folder hierarchy)
+
+
+● XML/HTML document structures
+
+
+● Organization charts
+
+
+● E-Book navigation systems
+
+
+The child-sibling representation is efficient for implementing general trees using linked lists in
+C.
+
+
+6. Methodology
+
+
+The project uses a General Tree Representation with:
+
+
+● Child pointer → first child
+
+● Sibling pointer → next node at same level
+Steps:
+1. Create root node ("E-Book")
+2. Add child nodes dynamically
+3. Traverse using recursion
+4. Perform CRUD operations
+7. Technology Used
+● Programming Language: C
+● Compiler: GCC
+● Platform: Windows/Linux
+● Concepts Used:
+○ Structures (struct)
+○ Pointers
+○ Dynamic Memory Allocation
+○ Recursion
+
+
+8. System Architecture / Design
+
+
+Structure of Node:
+
+struct Node {
+char title[50];
+struct Node* child;
+struct Node* sibling;
+};
+
+
+Design Concept:
+
+
+● Root → E-Book
+● Child → Chapter
+● Sub-child → Section
+9. Implementation Details
+
+
+🔁 CRUD Operations
+
+
+1. Create (Add Section)
+● Add a node as child of a given parent
+
+
+2. Read (Display)
+● Display tree using indentation
+
+
+3. Update
+● Modify node title
+
+
+4. Delete
+● Remove node (leaf or simple removal)
+
+
+5. Search
+● Find node using recursion
+
+
+Algorithm (Display Tree)
+1. Start from root
+2. Print node with indentation
+3. Recursively display child
+4. Move to sibling
+10. Results / Output
+
+
+Sample Output:
+
+
+- E-Book
+- Chapter1
+- Section1
+- Subsection1
+- Section2
+
+
+Features Achieved:
+
+
+● Hierarchical representation
+● Easy navigation
+● Efficient updates
+
+
+11. Conclusion
+
+
+The project successfully demonstrates the use of Tree Data Structures in solving real-world
+problems like E-Book content management. The implementation shows how hierarchical
+data can be efficiently managed using linked representations in C.
+
+
+12. Future Work
+
+
+● Add file handling (save/load data)
+● GUI interface
+● Search optimization
+● Support for large-scale data
+● Integration with actual E-Book systems
+
+
+13. References
+
+
+1. Data Structures using C – Reema Thareja
+2. Introduction to Algorithms – Thomas H. Cormen
+3. GeeksforGeeks (Tree Data Structure)
+4. TutorialsPoint – C Programming
+
+
+📐 Formatting Tips (IMPORTANT for
+marks)
+
+
+● Font: Times New Roman
+● Size: 12
+● Line spacing: 1.5
+● Headings: Bold + Numbered
+● Add page numbers
+● Add college logo (optional)
