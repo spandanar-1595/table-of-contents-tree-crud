@@ -1,0 +1,61 @@
+--- MENU ---
+1. Add Section
+2. Delete Section
+3. Update Section
+4. Search Section
+5. Display TOC
+6. Exit
+
+Enter choice: 1
+Enter parent title: E-Book
+Enter new section title: Chapter1
+
+Enter choice: 1
+Enter parent title: Chapter1
+Enter new section title: Section1
+
+Enter choice: 1
+Enter parent title: Chapter1
+Enter new section title: Section2
+
+Enter choice: 1
+Enter parent title: Section1
+Enter new section title: Subsection1
+
+Enter choice: 5
+
+- E-Book
+  - Chapter1
+    - Section1
+      - Subsection1
+    - Section2
+
+Enter choice: 4
+Enter title to search: Section1
+Found!
+
+Enter choice: 3
+Enter old title: Section2
+Enter new title: Section2_Updated
+Updated successfully!
+
+Enter choice: 5
+
+- E-Book
+  - Chapter1
+    - Section1
+      - Subsection1
+    - Section2_Updated
+
+Enter choice: 2
+Enter title to delete: Subsection1
+Deleted successfully!
+
+Enter choice: 5
+
+- E-Book
+  - Chapter1
+    - Section1
+    - Section2_Updated
+
+Enter choice: 6
